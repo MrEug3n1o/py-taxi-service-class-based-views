@@ -17,6 +17,7 @@ def index(request):
 
     return render(request, "taxi/index.html", context=context)
 
+
 class ManufacturerListView(ListView):
     model = Manufacturer
     queryset = Manufacturer.objects.order_by("name")
